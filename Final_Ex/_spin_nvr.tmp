@@ -1,0 +1,18 @@
+never mutual_exclusion {    /* !([] (! ((in_cs[0]) && (in_cs[1])))) */
+T0_init:
+	do
+	:: atomic { (! ((! ((in_cs[0]) && (in_cs[1]))))) -> assert(!(! ((! ((in_cs[0]) && (in_cs[1])))))) }
+	:: (1) -> goto T0_init
+	od;
+accept_all:
+	skip
+}
+never bounded_top {    /* !([] ((top<=5))) */
+T0_init:
+	do
+	:: atomic { (! (((top<=5)))) -> assert(!(! (((top<=5))))) }
+	:: (1) -> goto T0_init
+	od;
+accept_all:
+	skip
+}
