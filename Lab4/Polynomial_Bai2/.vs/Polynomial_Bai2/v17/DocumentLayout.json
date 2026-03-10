@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88BE729C-6E2F-40AF-AEBC-02673D733A9A}|Polynomial_Test\\Polynomial_Test.csproj|d:\\ki2nam4\\testing\\testing_lab\\lab4\\polynomial_bai2\\polynomial_test\\polynomialtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88BE729C-6E2F-40AF-AEBC-02673D733A9A}|Polynomial_Test\\Polynomial_Test.csproj|solutionrelative:polynomial_test\\polynomialtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D543ECB3-32E2-439D-A395-1FEDE9ADBA71}|Polynomial_Bai2\\Polynomial_Bai2.csproj|d:\\ki2nam4\\testing\\testing_lab\\lab4\\polynomial_bai2\\polynomial_bai2\\polynomial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D543ECB3-32E2-439D-A395-1FEDE9ADBA71}|Polynomial_Bai2\\Polynomial_Bai2.csproj|solutionrelative:polynomial_bai2\\polynomial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88BE729C-6E2F-40AF-AEBC-02673D733A9A}|Polynomial_Test\\Polynomial_Test.csproj|d:\\ki2nam4\\testing\\testing_lab\\lab4\\polynomial_bai2\\polynomial_test\\polynomial_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{88BE729C-6E2F-40AF-AEBC-02673D733A9A}|Polynomial_Test\\Polynomial_Test.csproj|solutionrelative:polynomial_test\\polynomial_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -22,11 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Polynomial_Test.csproj",
               "DocumentMoniker": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Test\\Polynomial_Test.csproj",
               "RelativeDocumentMoniker": "Polynomial_Test\\Polynomial_Test.csproj",
@@ -34,32 +26,7 @@
               "RelativeToolTip": "Polynomial_Test\\Polynomial_Test.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-20T07:06:16.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PolynomialTests.cs",
-              "DocumentMoniker": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Test\\PolynomialTests.cs",
-              "RelativeDocumentMoniker": "Polynomial_Test\\PolynomialTests.cs",
-              "ToolTip": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Test\\PolynomialTests.cs",
-              "RelativeToolTip": "Polynomial_Test\\PolynomialTests.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAswHAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T07:05:37.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Polynomial.cs",
-              "DocumentMoniker": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Bai2\\Polynomial.cs",
-              "RelativeDocumentMoniker": "Polynomial_Bai2\\Polynomial.cs",
-              "ToolTip": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Bai2\\Polynomial.cs",
-              "RelativeToolTip": "Polynomial_Bai2\\Polynomial.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T07:04:14.603Z",
+              "WhenOpened": "2026-01-20T07:06:16.082Z",
               "EditorCaption": ""
             }
           ]

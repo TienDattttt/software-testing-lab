@@ -27,15 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Polynomial_Test",
+              "Title": "Polynomial_Test.csproj",
               "DocumentMoniker": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Test\\Polynomial_Test.csproj",
               "RelativeDocumentMoniker": "Polynomial_Test\\Polynomial_Test.csproj",
               "ToolTip": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Test\\Polynomial_Test.csproj",
               "RelativeToolTip": "Polynomial_Test\\Polynomial_Test.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-20T07:06:16.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T07:06:16.082Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Polynomial_Test\\PolynomialTests.cs",
               "ToolTip": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Test\\PolynomialTests.cs",
               "RelativeToolTip": "Polynomial_Test\\PolynomialTests.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAswGoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAswHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T07:05:37.376Z",
               "EditorCaption": ""
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "Polynomial_Bai2\\Polynomial.cs",
               "ToolTip": "D:\\Ki2Nam4\\Testing\\Testing_Lab\\Lab4\\Polynomial_Bai2\\Polynomial_Bai2\\Polynomial.cs",
               "RelativeToolTip": "Polynomial_Bai2\\Polynomial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T07:04:14.603Z",
               "EditorCaption": ""

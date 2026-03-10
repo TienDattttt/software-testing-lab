@@ -2,7 +2,7 @@
 	default: Uerror("bad return move");
 	case  0: goto R999; /* nothing to undo */
 
-		 /* CLAIM bounded_top */
+		 /* CLAIM producer_no_overwrite */
 ;
 		
 	case 3: // STATE 1
@@ -15,13 +15,26 @@
 		;
 		goto R999;
 
+		 /* CLAIM non_starvation */
+;
+		;
+		;
+		;
+		
+	case 7: // STATE 13
+		;
+		p_restor(II);
+		;
+		;
+		goto R999;
+
 		 /* CLAIM mutual_exclusion */
 ;
 		
-	case 5: // STATE 1
+	case 8: // STATE 1
 		goto R999;
 
-	case 6: // STATE 10
+	case 9: // STATE 10
 		;
 		p_restor(II);
 		;
@@ -32,74 +45,55 @@
 ;
 		;
 		
-	case 8: // STATE 3
+	case 11: // STATE 3
 		;
-		now.notEmpty = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 9: // STATE 7
-		;
-		now.s = trpt->bup.oval;
+		now.lock = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 10: // STATE 10
+	case 12: // STATE 6
 		;
 		now.in_cs[ Index(((P1 *)_this)->_pid, 2) ] = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 11: // STATE 11
+	case 13: // STATE 7
 		;
-		now.top = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 12: // STATE 12
-		;
-		((P1 *)_this)->d = trpt->bup.ovals[0];
-		;
-		ungrab_ints(trpt->bup.ovals, 2);
-		goto R999;
-
-	case 13: // STATE 13
-		;
-		cons_evt = trpt->bup.oval;
+		cons_pre_flag = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 14: // STATE 14
+	case 14: // STATE 8
 		;
-		cons_evt = trpt->bup.oval;
+		now.flag = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 15: // STATE 15
+	case 15: // STATE 9
 		;
 		now.in_cs[ Index(((P1 *)_this)->_pid, 2) ] = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 16: // STATE 16
+	case 16: // STATE 10
 		;
-		now.s = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 17: // STATE 19
-		;
-		now.notFull = trpt->bup.oval;
+		now.cons_evt = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 18: // STATE 22
+	case 17: // STATE 11
 		;
-		now.ccount = trpt->bup.oval;
+		now.cons_evt = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 19: // STATE 28
+	case 18: // STATE 12
+		;
+		now.lock = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 19: // STATE 18
 		;
 		p_restor(II);
 		;
@@ -110,67 +104,55 @@
 ;
 		;
 		
-	case 21: // STATE 2
+	case 21: // STATE 3
 		;
-		((P0 *)_this)->d = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 22: // STATE 4
-		;
-		now.notFull = trpt->bup.oval;
+		now.lock = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 23: // STATE 8
-		;
-		now.s = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 24: // STATE 11
+	case 22: // STATE 6
 		;
 		now.in_cs[ Index(((P0 *)_this)->_pid, 2) ] = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 25: // STATE 12
+	case 23: // STATE 7
 		;
-		now.buffer[ Index(now.top, 5) ] = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 26: // STATE 13
-		;
-		now.top = trpt->bup.oval;
+		now.prod_pre_flag = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 27: // STATE 14
+	case 24: // STATE 8
+		;
+		now.flag = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 25: // STATE 9
 		;
 		now.in_cs[ Index(((P0 *)_this)->_pid, 2) ] = trpt->bup.oval;
 		;
 		goto R999;
 
-	case 28: // STATE 15
+	case 26: // STATE 10
 		;
-		now.s = trpt->bup.oval;
+		now.prod_evt = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 27: // STATE 11
+		;
+		now.prod_evt = trpt->bup.oval;
+		;
+		goto R999;
+
+	case 28: // STATE 12
+		;
+		now.lock = trpt->bup.oval;
 		;
 		goto R999;
 
 	case 29: // STATE 18
-		;
-		now.notEmpty = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 30: // STATE 21
-		;
-		now.pcount = trpt->bup.oval;
-		;
-		goto R999;
-
-	case 31: // STATE 27
 		;
 		p_restor(II);
 		;

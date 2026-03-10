@@ -1,35 +1,49 @@
-pan: ltl formula mutual_exclusion
 
 (Spin Version 6.5.1 -- 3 November 2019)
 	+ Partial Order Reduction
 
 Full statespace search for:
-	never claim         	+ (mutual_exclusion)
-	assertion violations	+ (if within scope of claim)
+	never claim         	- (not selected)
+	assertion violations	+
 	acceptance   cycles 	+ (fairness disabled)
-	invalid end states	- (disabled by never claim)
+	invalid end states	+
 
-State-vector 48 byte, depth reached 239, errors: 0
-     7677 states, stored
-     5355 states, matched
-    13032 transitions (= stored+matched)
+State-vector 28 byte, depth reached 18, errors: 0
+       26 states, stored
+        9 states, matched
+       35 transitions (= stored+matched)
         0 atomic steps
-hash conflicts:         1 (resolved)
+hash conflicts:         0 (resolved)
 
 Stats on memory usage (in Megabytes):
-    0.498	equivalent memory usage for states (stored*(State-vector + overhead))
-    0.674	actual memory usage for states
+    0.001	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.285	actual memory usage for states
   128.000	memory used for hash table (-w24)
     0.534	memory used for DFS stack (-m10000)
-  129.120	total actual memory usage
+  128.730	total actual memory usage
 
 
 unreached in proctype Producer
-	(0 of 27 states)
+	pc.pml:36, state 18, "-end-"
+	(1 of 18 states)
 unreached in proctype Consumer
-	(0 of 28 states)
+	pc.pml:50, state 18, "-end-"
+	(1 of 18 states)
 unreached in claim mutual_exclusion
+	_spin_nvr.tmp:3, state 6, "(!(!((in_cs[0]&&in_cs[1]))))"
+	_spin_nvr.tmp:3, state 6, "(1)"
 	_spin_nvr.tmp:8, state 10, "-end-"
-	(1 of 10 states)
+	(2 of 10 states)
+unreached in claim non_starvation
+	_spin_nvr.tmp:12, state 5, "(!(cons_evt))"
+	_spin_nvr.tmp:12, state 5, "(1)"
+	_spin_nvr.tmp:17, state 10, "(!(cons_evt))"
+	_spin_nvr.tmp:19, state 13, "-end-"
+	(3 of 13 states)
+unreached in claim producer_no_overwrite
+	_spin_nvr.tmp:23, state 6, "(!((!(prod_evt)||(prod_pre_flag==0))))"
+	_spin_nvr.tmp:23, state 6, "(1)"
+	_spin_nvr.tmp:28, state 10, "-end-"
+	(2 of 10 states)
 
-pan: elapsed time 0.003 seconds
+pan: elapsed time 0 seconds

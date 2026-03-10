@@ -1,0 +1,30 @@
+body {
+    background-color: #f4f6f9;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+    background-color: #ff7a00;
+    padding: 14px 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 14px;
+    border: none;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.btn-orange {
+    background-color: #ff7a00;
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #e86f00;
+}

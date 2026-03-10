@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/layout :: head('Add Organization Unit')"></head>
+<body th:replace="fragments/layout :: body(~{::content})">
+
+<content>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h4 class="mb-0">Add Organization Unit</h4>
+                <a class="btn btn-outline-secondary btn-sm" th:href="@{/org-unit/list}">Back to list</a>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+
+                    <!-- Alert -->
+                    <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
+                    <div th:if="${success}" class="alert alert-success" th:text="${success}"></div>
+
+                    <form th:action="@{/org-unit/add}" th:object="${orgUnit}" method="post">
+
+                        <div class="mb-3">
+                            <label class="form-label">Unit Id</label>
+                            <input type="text" class="form-control" th:field="*{unitId}" placeholder="VD: OU-010">
+                            <div class="text-danger small mt-1"
+                                 th:if="${#fields.hasErrors('unitId')}" th:errors="*{unitId}"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" th:field="*{name}" placeholder="VD: Finance">
+                            <div class="text-danger small mt-1"
+                                 th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" th:field="*{description}" rows="4"
+                                      placeholder="Type description here..."></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <a class="btn btn-outline-secondary" th:href="@{/org-unit/cancel}">Cancel</a>
+                            <button type="submit" class="btn btn-success">Save</button>
+                        </div>
+
+                        <p class="text-muted small mt-3 mb-0">
+                            This unit will be added under <strong>Organization</strong>. <span class="text-danger">*</span> Required
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</content>
+
+</body>
+</html>

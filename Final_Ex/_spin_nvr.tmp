@@ -7,10 +7,21 @@ T0_init:
 accept_all:
 	skip
 }
-never bounded_top {    /* !([] ((top<=5))) */
+never non_starvation {    /* !([] (<> (cons_evt))) */
 T0_init:
 	do
-	:: atomic { (! (((top<=5)))) -> assert(!(! (((top<=5))))) }
+	:: (! ((cons_evt))) -> goto accept_S4
+	:: (1) -> goto T0_init
+	od;
+accept_S4:
+	do
+	:: (! ((cons_evt))) -> goto accept_S4
+	od;
+}
+never producer_no_overwrite {    /* !([] ((! (prod_evt)) || ((prod_pre_flag==0)))) */
+T0_init:
+	do
+	:: atomic { (! (((! (prod_evt)) || ((prod_pre_flag==0))))) -> assert(!(! (((! (prod_evt)) || ((prod_pre_flag==0)))))) }
 	:: (1) -> goto T0_init
 	od;
 accept_all:
