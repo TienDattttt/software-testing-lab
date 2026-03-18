@@ -1,0 +1,37 @@
+[
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "role": "user",
+    "expectSuccess": true,
+    "description": "TC_JSON_01: Standard user đăng nhập thành công"
+  },
+  {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "role": "user",
+    "expectSuccess": false,
+    "description": "TC_JSON_02: Locked user bị từ chối"
+  },
+  {
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "role": "user",
+    "expectSuccess": true,
+    "description": "TC_JSON_03: Problem user đăng nhập thành công"
+  },
+  {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "role": "user",
+    "expectSuccess": true,
+    "description": "TC_JSON_04: Performance glitch user đăng nhập thành công"
+  },
+  {
+    "username": "invalid_user",
+    "password": "wrong_password",
+    "role": "unknown",
+    "expectSuccess": false,
+    "description": "TC_JSON_05: User không tồn tại bị từ chối"
+  }
+]
