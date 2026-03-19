@@ -34,6 +34,7 @@ public final class ConfigReader {
 
         System.out.println("[ConfigReader] \u0110ang d\u00f9ng m\u00f4i tr\u01b0\u1eddng: " + environment);
         System.out.println("[ConfigReader] explicit.wait = " + getExplicitWait());
+        System.out.println("[ConfigReader] retry.count = " + getRetryCount());
     }
 
     public static synchronized ConfigReader getInstance() {

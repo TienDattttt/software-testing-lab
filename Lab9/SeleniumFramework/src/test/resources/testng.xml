@@ -8,6 +8,7 @@
 
     <listeners>
         <listener class-name="com.example.seleniumframework.framework.utils.TestNameListener"/>
+        <listener class-name="com.example.seleniumframework.framework.utils.RetryListener"/>
     </listeners>
 
     <test name="Smoke Tests">
@@ -55,6 +56,12 @@
     <test name="Faker Checkout Tests">
         <classes>
             <class name="com.example.seleniumframework.tests.FakerCheckoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Flaky Simulation Tests">
+        <classes>
+            <class name="com.example.seleniumframework.tests.FlakySimulationTest"/>
         </classes>
     </test>
 

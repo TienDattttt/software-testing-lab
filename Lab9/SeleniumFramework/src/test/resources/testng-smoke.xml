@@ -7,6 +7,7 @@
 
     <listeners>
         <listener class-name="com.example.seleniumframework.framework.utils.TestNameListener"/>
+        <listener class-name="com.example.seleniumframework.framework.utils.RetryListener"/>
     </listeners>
 
     <test name="Smoke Tests - SmokeCases Sheet Only">

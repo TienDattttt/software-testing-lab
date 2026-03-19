@@ -1,6 +1,6 @@
 package com.example.seleniumframework.framework.utils;
 
-
+import com.example.seleniumframework.framework.config.ConfigReader;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,24 +16,21 @@ import java.time.format.DateTimeFormatter;
 
 public class ScreenshotUtil {
 
-    private static final String SCREENSHOT_DIR = "target/screenshots/";
-
-
     public static String capture(WebDriver driver, String testName) {
+        String screenshotDirPath = ConfigReader.getInstance().getScreenshotPath();
 
-        File screenshotDir = new File(SCREENSHOT_DIR);
+        File screenshotDir = new File(screenshotDirPath);
         if (!screenshotDir.exists()) {
             screenshotDir.mkdirs();
         }
 
-
         String timestamp = LocalDateTime.now()
                 .format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
-        String fileName = testName + "_" + timestamp + ".png";
-        String filePath = SCREENSHOT_DIR + fileName;
+        String safeTestName = sanitizeFileName(testName);
+        String fileName = safeTestName + "_" + timestamp + ".png";
+        String filePath = screenshotDirPath + fileName;
 
         try {
-
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             Path destination = Paths.get(filePath);
             Files.copy(srcFile.toPath(), destination);
@@ -48,5 +45,12 @@ public class ScreenshotUtil {
 
     public static byte[] captureAsBytes(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    }
+
+    private static String sanitizeFileName(String value) {
+        String sanitized = value.replaceAll("[\\\\/:*?\"<>|]", "_")
+                .replaceAll("\\s+", "_")
+                .trim();
+        return sanitized.isEmpty() ? "screenshot" : sanitized;
     }
 }

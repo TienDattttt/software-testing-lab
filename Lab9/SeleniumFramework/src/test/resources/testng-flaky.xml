@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Regression Suite" parallel="methods" thread-count="3">
+<suite name="FlakyRetrySuite" parallel="false" thread-count="1">
+
     <parameter name="browser" value="chrome"/>
     <parameter name="env" value="dev"/>
 
@@ -10,16 +11,10 @@
         <listener class-name="com.example.seleniumframework.framework.utils.RetryListener"/>
     </listeners>
 
-    <test name="Regression Tests - All 3 Sheets">
-        <groups>
-            <run>
-                <include name="smoke"/>
-                <include name="negative"/>
-                <include name="boundary"/>
-            </run>
-        </groups>
+    <test name="Flaky Simulation Tests">
         <classes>
-            <class name="com.example.seleniumframework.tests.LoginDDTTest"/>
+            <class name="com.example.seleniumframework.tests.FlakySimulationTest"/>
         </classes>
     </test>
+
 </suite>
