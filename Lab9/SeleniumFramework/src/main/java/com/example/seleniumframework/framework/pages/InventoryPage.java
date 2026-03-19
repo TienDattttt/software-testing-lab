@@ -9,10 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
-
 public class InventoryPage extends BasePage {
 
-    // ==================== LOCATORS ====================
+    private static final By INVENTORY_ITEMS = By.cssSelector(".inventory_item");
+    private static final By INVENTORY_ITEM_NAME = By.cssSelector(".inventory_item_name");
+    private static final By ITEM_BUTTON = By.cssSelector("button");
+    private static final By CART_LINK = By.className("shopping_cart_link");
+
     @FindBy(css = ".inventory_list")
     private WebElement inventoryList;
 
@@ -22,54 +25,47 @@ public class InventoryPage extends BasePage {
     @FindBy(css = ".inventory_item button")
     private List<WebElement> addToCartButtons;
 
-    @FindBy(css = ".inventory_item_name")
-    private List<WebElement> itemNames;
-
-
     public InventoryPage(WebDriver driver) {
         super(driver);
     }
-
-
-
 
     public boolean isLoaded() {
         return isElementVisible(By.cssSelector(".inventory_list"));
     }
 
-
     public InventoryPage addFirstItemToCart() {
+        wait.until(ExpectedConditions.visibilityOf(inventoryList));
         waitAndClick(addToCartButtons.get(0));
         return this;
     }
 
-
     public InventoryPage addItemByName(String productName) {
-        // Tìm container chứa đúng tên sản phẩm, rồi click nút button bên trong
-        List<WebElement> items = driver.findElements(By.cssSelector(".inventory_item"));
+        wait.until(ExpectedConditions.visibilityOf(inventoryList));
+
+        List<WebElement> items = driver.findElements(INVENTORY_ITEMS);
         for (WebElement item : items) {
-            String name = item.findElement(By.cssSelector(".inventory_item_name")).getText();
+            String name = item.findElement(INVENTORY_ITEM_NAME).getText().trim();
             if (name.equals(productName)) {
-                item.findElement(By.cssSelector("button")).click();
+                WebElement button = item.findElement(ITEM_BUTTON);
+                waitAndClick(button);
                 return this;
             }
         }
-        throw new RuntimeException("[InventoryPage] Không tìm thấy sản phẩm: " + productName);
-    }
 
+        throw new RuntimeException("[InventoryPage] Khong tim thay san pham: " + productName);
+    }
 
     public int getCartItemCount() {
         try {
             return Integer.parseInt(cartBadge.getText().trim());
         } catch (Exception e) {
-            // Badge không xuất hiện = giỏ hàng rỗng
             return 0;
         }
     }
 
-
     public CartPage goToCart() {
-        driver.findElement(By.className("shopping_cart_link")).click();
+        WebElement cartLink = wait.until(ExpectedConditions.elementToBeClickable(CART_LINK));
+        waitAndClick(cartLink);
         wait.until(ExpectedConditions.urlContains("cart"));
         return new CartPage(driver);
     }

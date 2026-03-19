@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    Bai6_WhiteBox_Selenium - TestNG Suite
+    ============================================================
+    Bai 6.1: PhoneValidatorTest (unit test, khong can browser)
+    Bai 6.2: TextBoxWhiteBoxTest (Selenium, mo Chrome)
+    JaCoCo bao cao tai: target/site/jacoco/index.html
+    ============================================================
+-->
+<suite name="Bai6_WhiteBox_Selenium_Suite" verbose="2">
+
+    <!-- Bai 6.1: TDD PhoneValidator - Unit Test (chay nhanh, khong browser) -->
+    <test name="Bai6.1 - PhoneValidator TDD + JaCoCo Coverage">
+        <classes>
+            <class name="com.example.bai6_whitebox_selenium.PhoneValidatorTest"/>
+        </classes>
+    </test>
+
+    <!-- Bai 6.2: White-Box + Selenium TextBox (mo Chrome, chay cham hon) -->
+    <test name="Bai6.2 - TextBox White-Box Selenium Tests">
+        <classes>
+            <class name="com.example.bai6_whitebox_selenium.TextBoxWhiteBoxTest"/>
+        </classes>
+    </test>
+
+</suite>

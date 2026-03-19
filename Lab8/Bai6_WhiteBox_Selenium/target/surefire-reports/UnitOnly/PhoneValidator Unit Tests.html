@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>TestNG:  PhoneValidator Unit Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PhoneValidator Unit Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 19 12:42:23 ICT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (118 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath4_Plus84_WrongLength()'><b>testPath4_Plus84_WrongLength</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 4 [N3=True, N5=False]: +84 nhung chi co 8 chu so sau -> false (sai do dai)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath1_Null()'><b>testPath1_Null</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 1 [N1=True]: phone=null -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: 0512345678, 05x format</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: 0912345678, 09x format</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testValid_Prefix05()'><b>testValid_Prefix05</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Hop le: bat dau bang '05x' -> true</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: 093456789, 9 chu so (thieu 1)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters:    , khoang trang</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath7_Valid_Prefix09()'><b>testPath7_Valid_Prefix09</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 7 [N1..N6=True]: '0912345678' -> hop le (dau so 9)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: , rong</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testValid_Plus84Format()'><b>testValid_Plus84Format</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Hop le: dinh dang +84 chuan hoa -> true</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testValid_Plus84WithSpace()'><b>testValid_Plus84WithSpace</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Hop le: +84 voi space -> true</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testValid_Prefix07()'><b>testValid_Prefix07</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Hop le: bat dau bang '07x' -> true</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: 0412345678, dau so 4 (sai)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath6_WrongSecondDigit_2()'><b>testPath6_WrongSecondDigit_2</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 6 [N6=False]: bat dau bang '02' (dau so sai '2') -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath1c_BlankSpaces()'><b>testPath1c_BlankSpaces</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 1c [N1=True]: phone chi chua khoang trang -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: 0812345678, 08x format</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath6b_WrongSecondDigit_4()'><b>testPath6b_WrongSecondDigit_4</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 6b [N6=False]: bat dau bang '04' (dau so sai '4') -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath5_ZeroPrefix_WrongLength()'><b>testPath5_ZeroPrefix_WrongLength</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 5 [N4=True, N5=False]: bat dau bang 0 nhung chi 9 chu so tong -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testValid_Prefix08()'><b>testValid_Prefix08</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Hop le: bat dau bang '08x' -> true</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: 1234567890, bat dau bang 1</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: null, null</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testValid_WithSpaces()'><b>testValid_WithSpaces</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Hop le: so dien thoai co dau cach (space) -> true</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: 0312345678, 03x format</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath5b_TooLong()'><b>testPath5b_TooLong</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 5b [N5=False]: 11 chu so -> false (qua do dai)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath1b_Empty()'><b>testPath1b_Empty</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 1b [N1=True]: phone rong -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: 0712345678, 07x format</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath3_WrongPrefix()'><b>testPath3_WrongPrefix</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 3 [N3=F, N4=F]: prefix la '1...' (khong phai 0 hay +84) -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: +84 912 345 678, chuoi +84 co space</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: 09345678901, 11 chu so (du 1)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: +8412345678, +84 + 8 chu so (thieu 1)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath2b_InvalidCharacter_Special()'><b>testPath2b_InvalidCharacter_Special</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 2b [N2=True]: chua ky tu dac biet '@' -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testValid_Prefix03()'><b>testValid_Prefix03</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Hop le: bat dau bang '03x' -> true</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: 0212345678, dau so 2 (sai)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_InvalidPhones()'><b>testDataProvider_InvalidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so khong hop le -> phai tra false<br>Parameters: 09abc12345, chua chu cai</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testPath2_InvalidCharacter_Letter()'><b>testPath2_InvalidCharacter_Letter</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: Path 2 [N2=True]: chua chu cai 'a' -> false</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: +84912345678, +84 format</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+<tr>
+<td title='com.example.bai6_whitebox_selenium.PhoneValidatorTest.testDataProvider_ValidPhones()'><b>testDataProvider_ValidPhones</b><br>Test class: com.example.bai6_whitebox_selenium.PhoneValidatorTest<br>Test method: DataProvider: Cac so hop le -> phai tra true<br>Parameters: 0912 345 678, co khoang trang</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0</td></tr>
+</table><p>
+</body>
+</html>

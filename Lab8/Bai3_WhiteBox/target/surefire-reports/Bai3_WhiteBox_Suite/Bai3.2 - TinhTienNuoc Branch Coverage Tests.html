@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>TestNG:  Bai3.2 - TinhTienNuoc Branch Coverage Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Bai3.2 - TinhTienNuoc Branch Coverage Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 19 12:14:21 ICT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (13 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC2_HoNgheo()'><b>testTC2_HoNgheo</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC2 [N1-F, N2-True]: loai=ho_ngheo, soM3=5 -> 5*5000=25000</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC4_DanCu_Muc2()'><b>testTC4_DanCu_Muc2</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC4 [N3-T, N4-F, N5-True]: loai=dan_cu, soM3=15 -> 15*9900=148500</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testBoundary_DanCu_21m3()'><b>testBoundary_DanCu_21m3</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: Boundary: soM3=21 (vua qua nguong N5) voi dan_cu -> 21*11400=239400</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC4b_DanCu_Bien20()'><b>testTC4b_DanCu_Bien20</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC4b [N5-True bien]: loai=dan_cu, soM3=20 -> 20*9900=198000 (bien tren N5=True)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testBoundary_DanCu_11m3()'><b>testBoundary_DanCu_11m3</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: Boundary: soM3=11 (vua qua nguong N4) voi dan_cu -> 11*9900=108900</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC3_DanCu_DuoiOrBang10()'><b>testTC3_DanCu_DuoiOrBang10</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC3 [N1-F, N2-F, N3-True, N4-True]: loai=dan_cu, soM3=8 -> 8*7500=60000</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testBoundary_SoM3_Mot_HoNgheo()'><b>testBoundary_SoM3_Mot_HoNgheo</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: Boundary: soM3=1 (bien duoi hop le) voi ho_ngheo -> 1*5000=5000</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC5_DanCu_Muc3()'><b>testTC5_DanCu_Muc3</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC5 [N3-T, N4-F, N5-False]: loai=dan_cu, soM3=25 -> 25*11400=285000</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC6_KinhDoanh()'><b>testTC6_KinhDoanh</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC6 [N2-F, N3-False]: loai=kinh_doanh, soM3=10 -> 10*22000=220000</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC3b_DanCu_Bien10()'><b>testTC3b_DanCu_Bien10</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC3b [N4-True bien]: loai=dan_cu, soM3=10 -> 10*7500=75000 (bien cua N4=True)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC1b_SoM3_Am()'><b>testTC1b_SoM3_Am</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC1b [N1-True vien am]: soM3=-5 -> tra ve 0</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.TinhTienNuocTest.testTC1_SoM3_Khong()'><b>testTC1_SoM3_Khong</b><br>Test class: com.example.bai3_whitebox.TinhTienNuocTest<br>Test method: TC1 [N1-True]: soM3=0 -> tra ve 0 (khong tinh tien)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.TinhTienNuocTest@8297b3a</td></tr>
+</table><p>
+</body>
+</html>

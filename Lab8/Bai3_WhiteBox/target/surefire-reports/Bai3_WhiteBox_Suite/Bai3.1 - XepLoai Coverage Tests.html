@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>TestNG:  Bai3.1 - XepLoai Coverage Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Bai3.1 - XepLoai Coverage Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 19 12:14:21 ICT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (47 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testStatement_DiemLonHon10()'><b>testStatement_DiemLonHon10</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-S2 [Statement]: diemTB=11 (lon hon 10) -> 'Diem khong hop le' | Phu: N1-True (bien)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBranch_N2_True_Gioi_BienDuoi()'><b>testBranch_N2_True_Gioi_BienDuoi</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-B2 [Branch N1-False, N2-True]: diem=8.5 -> bien duoi cua 'Gioi'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBoundary_VuaKhongDatGioi()'><b>testBoundary_VuaKhongDatGioi</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: Boundary: diem=8.49 (ngay duoi nguong Gioi) -> 'Kha'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testStatement_ThiLai()'><b>testStatement_ThiLai</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-S6 [Statement]: diemTB=4.0, coThiLai=true -> 'Thi lai' | Phu: N5-True</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testStatement_TrungBinh()'><b>testStatement_TrungBinh</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-S5 [Statement]: diemTB=6.0 -> 'Trung Binh' | Phu: N1-F, N2-F, N3-F, N4-True</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBoundary_DiemZero()'><b>testBoundary_DiemZero</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: Boundary: diem=0 (bien duoi hop le) -> khong phai Gioi/Kha/TrungBinh</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testStatement_DiemAm()'><b>testStatement_DiemAm</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-S1 [Statement]: diemTB=-1 (am) -> 'Diem khong hop le' | Phu: N1-True</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBranch_N4_True_TrungBinh_BienDuoi()'><b>testBranch_N4_True_TrungBinh_BienDuoi</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-B4 [Branch N3-False, N4-True]: diem=5.5 -> bien duoi cua 'Trung Binh'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBranch_N5_False_YeuHocLai()'><b>testBranch_N5_False_YeuHocLai</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-B6 [Branch N5-False]: diem=4.0, coThiLai=false -> 'Yeu - Hoc lai'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBranch_N5_True_ThiLai()'><b>testBranch_N5_True_ThiLai</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-B5 [Branch N4-False, N5-True]: diem=4.0, coThiLai=true -> 'Thi lai'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBoundary_DiemMuoi()'><b>testBoundary_DiemMuoi</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: Boundary: diem=10 (bien tren hop le) -> 'Gioi'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testStatement_Kha()'><b>testStatement_Kha</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-S4 [Statement]: diemTB=7.5 -> 'Kha' | Phu: N1-False, N2-False, N3-True</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBranch_N3_True_Kha_BienDuoi()'><b>testBranch_N3_True_Kha_BienDuoi</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-B3 [Branch N2-False, N3-True]: diem=7.0 -> bien duoi cua 'Kha'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testBranch_N1_True_DiemAm()'><b>testBranch_N1_True_DiemAm</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-B1 [Branch N1-True]: diem=-1 -> N1 du dung, thoat ngay | 'Diem khong hop le'</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+<tr>
+<td title='com.example.bai3_whitebox.XepLoaiCoverageTest.testStatement_Gioi()'><b>testStatement_Gioi</b><br>Test class: com.example.bai3_whitebox.XepLoaiCoverageTest<br>Test method: TC-S3 [Statement]: diemTB=9.0 -> 'Gioi' | Phu: N1-False, N2-True</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai3_whitebox.XepLoaiCoverageTest@62379589</td></tr>
+</table><p>
+</body>
+</html>

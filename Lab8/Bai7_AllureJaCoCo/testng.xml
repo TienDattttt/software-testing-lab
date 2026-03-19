@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    Bai7_AllureJaCoCo - TestNG Suite
+    ============================================================
+    Sau khi chay 'mvn clean test':
+    - Allure results:  target/allure-results/
+    - JaCoCo report:   target/site/jacoco/index.html
+    - Allure serve:    allure serve target/allure-results
+    ============================================================
+-->
+<suite name="Bai7_AllureJaCoCo_Suite" verbose="2">
+
+    <test name="Bai7.1 - OrderProcessor: Basis Path + MC/DC Tests">
+        <classes>
+            <class name="com.example.bai7_allurejacoco.OrderProcessorTest"/>
+        </classes>
+    </test>
+
+</suite>

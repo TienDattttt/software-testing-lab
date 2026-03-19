@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PhoneValidator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Bai6_WhiteBox_Selenium</a> &gt; <a href="index.source.html" class="el_package">com.example.bai6_whitebox_selenium</a> &gt; <span class="el_source">PhoneValidator.java</span></div><h1>PhoneValidator.java</h1><pre class="source lang-java linenums">package com.example.bai6_whitebox_selenium;
+
+
+<span class="nc" id="L4">public class PhoneValidator {</span>
+
+   
+    public static boolean isValid(String phone) {
+        // N1: Kiem tra null hoac rong
+<span class="fc bfc" id="L9" title="All 4 branches covered.">        if (phone == null || phone.isBlank()) {         // N1</span>
+<span class="fc" id="L10">            return false;</span>
+        }
+
+        // Loai bo khoang trang o dau/cuoi (chap nhan space)
+<span class="fc" id="L14">        String trimmed = phone.trim();</span>
+
+        // N2: Kiem tra ky tu hop le (chi cho phep 0-9, +, space)
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if (!trimmed.matches(&quot;[0-9+\\s]+&quot;)) {            // N2</span>
+<span class="fc" id="L18">            return false;</span>
+        }
+
+        // Chuan hoa: bo khoang trang ben trong
+<span class="fc" id="L22">        String normalized = trimmed.replaceAll(&quot;\\s+&quot;, &quot;&quot;);</span>
+
+        // N3: Xu ly prefix &quot;+84&quot;
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        if (normalized.startsWith(&quot;+84&quot;)) {              // N3</span>
+<span class="fc" id="L26">            normalized = &quot;0&quot; + normalized.substring(3);</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        } else if (normalized.startsWith(&quot;0&quot;)) {         // N4</span>
+            // Giu nguyen, da la dang chuan &quot;0xxxxxxxxx&quot;
+        } else {
+<span class="fc" id="L30">            return false;                               // N4=False: prefix sai</span>
+        }
+
+        // N5: Kiem tra do dai phai dung 10 chu so
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (normalized.length() != 10) {                // N5</span>
+<span class="fc" id="L35">            return false;</span>
+        }
+
+        // N6: Kiem tra chu so thu 2 (index 1) phai la 3, 5, 7, 8, hoac 9
+<span class="fc" id="L39">        char secondDigit = normalized.charAt(1);</span>
+<span class="fc bfc" id="L40" title="All 10 branches covered.">        if (secondDigit != '3' &amp;&amp; secondDigit != '5'    // N6</span>
+                &amp;&amp; secondDigit != '7' &amp;&amp; secondDigit != '8'
+                &amp;&amp; secondDigit != '9') {
+<span class="fc" id="L43">            return false;</span>
+        }
+
+<span class="fc" id="L46">        return true;  // Hop le</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

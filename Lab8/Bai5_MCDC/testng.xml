@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    Bai5_MCDC - TestNG Suite
+    ============================================================
+    Ham: duDieuKienVay(tuoi, thuNhap, coTaiSanBaoLanh, dienTinDung)
+    Bieu thuc: (A && B) && (C || D) - 4 dieu kien don
+    Truth Table: 16 dong (2^4)
+    MC/DC: 6 rows toi thieu, 4 cap chung minh doc lap
+    ============================================================
+-->
+<suite name="Bai5_MCDC_Suite" verbose="2">
+
+    <!-- Bai tap 5.1 + 5.2: Condition Coverage va MC/DC Testing -->
+    <test name="Bai5.1-5.2 - VayVon Condition Coverage and MC/DC Tests">
+        <classes>
+            <class name="com.example.bai5_mcdc.VayVonMCDCTest"/>
+        </classes>
+    </test>
+
+</suite>

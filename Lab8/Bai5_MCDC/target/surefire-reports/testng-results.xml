@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-19T12:32:44 ICT" name="Bai5_MCDC_Suite" finished-at="2026-03-19T12:32:44 ICT" duration-ms="62">
+    <groups>
+    </groups>
+    <test started-at="2026-03-19T12:32:44 ICT" name="Bai5.1-5.2 - VayVon Condition Coverage and MC/DC Tests" finished-at="2026-03-19T12:32:44 ICT" duration-ms="62">
+      <class name="com.example.bai5_mcdc.VayVonMCDCTest">
+        <test-method signature="testBoundary_A_Tuoi21()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testBoundary_A_Tuoi21" description="Boundary A: tuoi=21 (vua duoi nguong) -&gt; KHONG DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_A_Tuoi21 -->
+        <test-method signature="testBoundary_A_Tuoi22()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testBoundary_A_Tuoi22" description="Boundary A: tuoi=22 (bien duoi du dieu kien) -&gt; DUOC VAY (neu B,C/D hop le)" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_A_Tuoi22 -->
+        <test-method signature="testBoundary_B_ThuNhap10tr()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testBoundary_B_ThuNhap10tr" description="Boundary B: thuNhap=10,000,000 (vua du) -&gt; DUOC VAY (neu A,C/D hop le)" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_B_ThuNhap10tr -->
+        <test-method signature="testBoundary_B_ThuNhapDuoi10tr()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testBoundary_B_ThuNhapDuoi10tr" description="Boundary B: thuNhap=9,999,999 (vua duoi nguong) -&gt; KHONG DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_B_ThuNhapDuoi10tr -->
+        <test-method signature="testBoundary_D_TinDung700()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testBoundary_D_TinDung700" description="Boundary D: dienTinDung=700 (bien duoi du dieu kien) -&gt; DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_D_TinDung700 -->
+        <test-method signature="testBoundary_D_TinDung699()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testBoundary_D_TinDung699" description="Boundary D: dienTinDung=699 (vua duoi nguong, ko co tai san) -&gt; KHONG DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_D_TinDung699 -->
+        <test-method signature="testConditionCoverage_TatCaFalse()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testConditionCoverage_TatCaFalse" description="Condition Coverage TC2: A=F,B=F,C=F,D=F -&gt; FALSE (tat ca dieu kien False)" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConditionCoverage_TatCaFalse -->
+        <test-method signature="testConditionCoverage_TatCaTrue()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testConditionCoverage_TatCaTrue" description="Condition Coverage TC1: A=T,B=T,C=T,D=T -&gt; TRUE (tat ca dieu kien True)" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConditionCoverage_TatCaTrue -->
+        <test-method signature="testMCDC_ADocLap_TuoiThapHon22()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_ADocLap_TuoiThapHon22" description="MC/DC Row9 [A=F,B=T,C=T,D=T]: Tuoi thap hon 22 (A doc lap) -&gt; KHONG DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_ADocLap_TuoiThapHon22 -->
+        <test-method signature="testMCDC_BDocLap_ThuNhapThap()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_BDocLap_ThuNhapThap" description="MC/DC Row5 [A=T,B=F,C=T,D=T]: Thu nhap thap (B doc lap) -&gt; KHONG DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_BDocLap_ThuNhapThap -->
+        <test-method signature="testMCDC_DataDriven(int,double,boolean,int,boolean,java.lang.String)[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_DataDriven" description="MC/DC DataProvider: chay ca 6 rows toi thieu bang data-driven" data-provider="mcdc_data" finished-at="2026-03-19T12:32:44 ICT" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5E7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[750]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Row1 [A=T,B=T,C=T,D=T] -> TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_DataDriven -->
+        <test-method signature="testMCDC_DataDriven(int,double,boolean,int,boolean,java.lang.String)[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_DataDriven" description="MC/DC DataProvider: chay ca 6 rows toi thieu bang data-driven" data-provider="mcdc_data" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5E7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[600]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Row2 [A=T,B=T,C=T,D=F] -> TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_DataDriven -->
+        <test-method signature="testMCDC_DataDriven(int,double,boolean,int,boolean,java.lang.String)[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_DataDriven" description="MC/DC DataProvider: chay ca 6 rows toi thieu bang data-driven" data-provider="mcdc_data" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5E7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[750]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Row3 [A=T,B=T,C=F,D=T] -> TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_DataDriven -->
+        <test-method signature="testMCDC_DataDriven(int,double,boolean,int,boolean,java.lang.String)[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_DataDriven" description="MC/DC DataProvider: chay ca 6 rows toi thieu bang data-driven" data-provider="mcdc_data" finished-at="2026-03-19T12:32:44 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8000000.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[750]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Row5 [A=T,B=F,C=T,D=T] -> FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_DataDriven -->
+        <test-method signature="testMCDC_DataDriven(int,double,boolean,int,boolean,java.lang.String)[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_DataDriven" description="MC/DC DataProvider: chay ca 6 rows toi thieu bang data-driven" data-provider="mcdc_data" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5E7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[600]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Row4 [A=T,B=T,C=F,D=F] -> FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_DataDriven -->
+        <test-method signature="testMCDC_DataDriven(int,double,boolean,int,boolean,java.lang.String)[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_DataDriven" description="MC/DC DataProvider: chay ca 6 rows toi thieu bang data-driven" data-provider="mcdc_data" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5E7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[750]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Row9 [A=F,B=T,C=T,D=T] -> FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_DataDriven -->
+        <test-method signature="testMCDC_Row1_TatCaTrue()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_Row1_TatCaTrue" description="MC/DC Row1 [A=T,B=T,C=T,D=T]: Du dieu kien ca 4 -&gt; DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_Row1_TatCaTrue -->
+        <test-method signature="testMCDC_Row3_KhongTaiSan_TinDungTot()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_Row3_KhongTaiSan_TinDungTot" description="MC/DC Row3 [A=T,B=T,C=F,D=T]: Khong tai san, tin dung tot -&gt; con DUOC VAY (D doc lap)" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_Row3_KhongTaiSan_TinDungTot -->
+        <test-method signature="testMCDC_Row2_CoTaiSan_KhongTinDung()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_Row2_CoTaiSan_KhongTinDung" description="MC/DC Row2 [A=T,B=T,C=T,D=F]: Co tai san, ko tin dung tot -&gt; con DUOC VAY (C doc lap)" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_Row2_CoTaiSan_KhongTinDung -->
+        <test-method signature="testMCDC_Row4_KhongBaoDam()[pri:0, instance:com.example.bai5_mcdc.VayVonMCDCTest@43bc63a3]" started-at="2026-03-19T12:32:44 ICT" name="testMCDC_Row4_KhongBaoDam" description="MC/DC Row4 [A=T,B=T,C=F,D=F]: Co ban hop le nhung KHONG co bao dam -&gt; KHONG DUOC VAY" finished-at="2026-03-19T12:32:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_Row4_KhongBaoDam -->
+      </class> <!-- com.example.bai5_mcdc.VayVonMCDCTest -->
+    </test> <!-- Bai5.1-5.2 - VayVon Condition Coverage and MC/DC Tests -->
+  </suite> <!-- Bai5_MCDC_Suite -->
+</testng-results>

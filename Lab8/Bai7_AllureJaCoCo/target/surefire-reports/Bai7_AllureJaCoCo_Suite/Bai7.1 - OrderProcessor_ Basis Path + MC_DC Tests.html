@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  Bai7.1 - OrderProcessor: Basis Path + MC/DC Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Bai7.1 - OrderProcessor: Basis Path + MC/DC Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 19 12:48:47 ICT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (303 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP3_Online_PhiShip30k()'><b>testP3_Online_PhiShip30k</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P3 [D2=F,D5=F,D6=F,D7=T,D8=T]: Tong<500k, ONLINE -> phi ship 30k</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP1_GioHangNull()'><b>testP1_GioHangNull</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P1 [D1=True]: Gio hang null -> throws IllegalArgumentException</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testMCDC_M3_D2False_NoCoupon()'><b>testMCDC_M3_D2False_NoCoupon</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: MC/DC M3 [D2=F]: coupon=null -> D2=False, khong ap dung giam gia</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP1b_GioHangRong()'><b>testP1b_GioHangRong</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P1b [D1=True]: Gio hang rong -> throws IllegalArgumentException</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testMCDC_M1_D2True_D3True_Sale10()'><b>testMCDC_M1_D2True_D3True_Sale10</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: MC/DC M1 [D2=T,D3=T]: coupon='SALE10', hop le -> ap dung giam gia 10%</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP7_CouponKhongHopLe()'><b>testP7_CouponKhongHopLe</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P7 [D2=T,D3=F,D4=F]: Ma giam gia khong hop le -> throws exception</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP9_PlatinumMember_KhongShip()'><b>testP9_PlatinumMember_KhongShip</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P9 [D6=T,D7=F]: Khach PLATINUM giam 10%, tong>=500k -> khong ship</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testMCDC_M2_D2True_D3False_Sale20()'><b>testMCDC_M2_D2True_D3False_Sale20</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: MC/DC M2 [D2=T,D3=F,D4=T]: coupon='SALE20', D3=False -> ap dung D4 (20%)</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testBoundary_D7_Total499999_CoShip()'><b>testBoundary_D7_Total499999_CoShip</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: Boundary D7: total=499,999 (vua duoi nguong) -> CO phi ship</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testBoundary_D7_Total500k_KhongShip()'><b>testBoundary_D7_Total500k_KhongShip</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: Boundary D7: total=500,000 (dung nguong) -> KHONG phi ship</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testKetHop_Sale10_Gold_KhongShip()'><b>testKetHop_Sale10_Gold_KhongShip</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: Ket hop: SALE10 + GOLD member + COD, tong >= 500k</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP2_KhongCoupon_KhongMember_KhongShip()'><b>testP2_KhongCoupon_KhongMember_KhongShip</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P2 [D2=F,D5=F,D6=F,D7=F]: Khong coupon, khong member, tong>=500k -> khong ship</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP6_Sale20_Online()'><b>testP6_Sale20_Online</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P6 [D2=T,D3=F,D4=T,D7=T,D8=T]: SALE20 giam 20%, online</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testKetHop_Sale20_Platinum_Online()'><b>testKetHop_Sale20_Platinum_Online</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: Ket hop: SALE20 + PLATINUM + BANKING, tong < 500k</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP4_COD_PhiShip20k()'><b>testP4_COD_PhiShip20k</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P4 [D7=T,D8=F]: COD, tong<500k -> phi ship 20k</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testMCDC_M3b_D2False_EmptyCoupon()'><b>testMCDC_M3b_D2False_EmptyCoupon</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: MC/DC M3b [D2=F bien]: coupon='' (rong) -> D2=False</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP8_GoldMember_KhongShip()'><b>testP8_GoldMember_KhongShip</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P8 [D5=T,D7=F]: Khach GOLD giam 5%, tong>=500k -> khong ship</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+<tr>
+<td title='com.example.bai7_allurejacoco.OrderProcessorTest.testP5_Sale10_Online()'><b>testP5_Sale10_Online</b><br>Test class: com.example.bai7_allurejacoco.OrderProcessorTest<br>Test method: P5 [D2=T,D3=T,D7=T,D8=T]: SALE10 giam 10%, online -> phi ship 30k</td>
+<td></td>
+<td>0</td>
+<td>com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7</td></tr>
+</table><p>
+</body>
+</html>

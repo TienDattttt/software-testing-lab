@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    Bai4_PathCoverage - TestNG Suite
+    ============================================================
+    Ham: tinhPhiShip(double trongLuong, String vung, boolean laMember)
+    Decision nodes: D1..D7 => CC = 7 + 1 = 8
+    Basis Paths: 8 duong co so + boundary + extra = 12 test methods
+    ============================================================
+-->
+<suite name="Bai4_PathCoverage_Suite" verbose="2">
+
+    <!-- Bai tap 4.1 + 4.2: Basis Path Testing cho PhiShip -->
+    <test name="Bai4.1-4.2 - PhiShip Basis Path Tests (CC=8)">
+        <classes>
+            <class name="com.example.bai4_pathcoverage.PhiShipBasisPathTest"/>
+        </classes>
+    </test>
+
+</suite>

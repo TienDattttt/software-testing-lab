@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TextBoxPage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Bai6_WhiteBox_Selenium</a> &gt; <a href="index.source.html" class="el_package">com.example.bai6_whitebox_selenium</a> &gt; <span class="el_source">TextBoxPage.java</span></div><h1>TextBoxPage.java</h1><pre class="source lang-java linenums">package com.example.bai6_whitebox_selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+
+public class TextBoxPage {
+
+    private final WebDriver       driver;
+    private final WebDriverWait   wait;
+
+    @FindBy(id = &quot;userName&quot;)
+    private WebElement nameField;
+
+    @FindBy(id = &quot;userEmail&quot;)
+    private WebElement emailField;
+
+    @FindBy(id = &quot;currentAddress&quot;)
+    private WebElement currentAddressField;
+
+    @FindBy(id = &quot;submit&quot;)
+    private WebElement submitBtn;
+
+    @FindBy(id = &quot;output&quot;)
+    private WebElement outputSection;
+
+<span class="nc" id="L35">    public TextBoxPage(WebDriver driver) {</span>
+<span class="nc" id="L36">        this.driver = driver;</span>
+<span class="nc" id="L37">        this.wait   = new WebDriverWait(driver, Duration.ofSeconds(10));</span>
+<span class="nc" id="L38">        PageFactory.initElements(driver, this);</span>
+<span class="nc" id="L39">    }</span>
+
+    /** Mo trang text-box */
+    public void open() {
+<span class="nc" id="L43">        driver.get(&quot;https://demoqa.com/text-box&quot;);</span>
+        // Cho page load xong
+<span class="nc" id="L45">        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(&quot;userName&quot;)));</span>
+<span class="nc" id="L46">    }</span>
+
+    /** Nhap name, email, address roi click submit */
+    public void fillAndSubmit(String name, String email, String address) {
+<span class="nc" id="L50">        clearAndType(nameField,           name);</span>
+<span class="nc" id="L51">        clearAndType(emailField,          email);</span>
+<span class="nc" id="L52">        clearAndType(currentAddressField, address);</span>
+<span class="nc" id="L53">        clickSubmit();</span>
+<span class="nc" id="L54">    }</span>
+
+    /** Chi nhap name roi submit (test TC chi co name) */
+    public void fillNameAndSubmit(String name) {
+<span class="nc" id="L58">        clearAndType(nameField, name);</span>
+<span class="nc" id="L59">        clickSubmit();</span>
+<span class="nc" id="L60">    }</span>
+
+    /** Scroll den nut Submit roi click bang JS (tranh bi che boi quang cao) */
+    public void clickSubmit() {
+<span class="nc" id="L64">        ((JavascriptExecutor) driver).executeScript(</span>
+                &quot;arguments[0].scrollIntoView(true);&quot;, submitBtn);
+<span class="nc" id="L66">        ((JavascriptExecutor) driver).executeScript(</span>
+                &quot;arguments[0].click();&quot;, submitBtn);
+<span class="nc" id="L68">    }</span>
+
+
+    public boolean isOutputDisplayed() {
+        try {
+<span class="nc" id="L73">            WebElement out = wait.until(</span>
+<span class="nc" id="L74">                    ExpectedConditions.visibilityOfElementLocated(By.id(&quot;output&quot;)));</span>
+<span class="nc bnc" id="L75" title="All 4 branches missed.">            return out.isDisplayed() &amp;&amp; !out.getText().isBlank();</span>
+<span class="nc" id="L76">        } catch (Exception e) {</span>
+<span class="nc" id="L77">            return false;</span>
+        }
+    }
+
+
+    public String getOutputText() {
+        try {
+<span class="nc" id="L84">            return wait.until(</span>
+<span class="nc" id="L85">                    ExpectedConditions.visibilityOfElementLocated(By.id(&quot;output&quot;))</span>
+<span class="nc" id="L86">            ).getText();</span>
+<span class="nc" id="L87">        } catch (Exception e) {</span>
+<span class="nc" id="L88">            return &quot;&quot;;</span>
+        }
+    }
+
+
+    public boolean isEmailFieldInvalid() {
+        try {
+<span class="nc" id="L95">            String cls = emailField.getAttribute(&quot;class&quot;);</span>
+<span class="nc bnc" id="L96" title="All 4 branches missed.">            return cls != null &amp;&amp; cls.contains(&quot;field-error&quot;);</span>
+<span class="nc" id="L97">        } catch (Exception e) {</span>
+<span class="nc" id="L98">            return false;</span>
+        }
+    }
+
+    /** Xoa toan bo noi dung field va nhap gia tri moi */
+    private void clearAndType(WebElement element, String value) {
+<span class="nc" id="L104">        element.clear();</span>
+<span class="nc bnc" id="L105" title="All 4 branches missed.">        if (value != null &amp;&amp; !value.isEmpty()) {</span>
+<span class="nc" id="L106">            element.sendKeys(value);</span>
+        }
+<span class="nc" id="L108">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

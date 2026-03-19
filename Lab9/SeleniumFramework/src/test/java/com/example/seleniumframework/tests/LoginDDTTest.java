@@ -8,115 +8,103 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-
 public class LoginDDTTest extends BaseTest {
 
     private static final String EXCEL_PATH =
             "src/test/resources/testdata/login_data.xlsx";
-
 
     @DataProvider(name = "smokeCases", parallel = false)
     public Object[][] getSmokeData() {
         return ExcelReader.getData(EXCEL_PATH, "SmokeCases");
     }
 
-
     @DataProvider(name = "negativeCases", parallel = false)
     public Object[][] getNegativeData() {
         return ExcelReader.getData(EXCEL_PATH, "NegativeCases");
     }
-
 
     @DataProvider(name = "boundaryCases", parallel = false)
     public Object[][] getBoundaryData() {
         return ExcelReader.getData(EXCEL_PATH, "BoundaryCases");
     }
 
-
     @Test(
-            groups      = {"smoke", "regression"},
+            groups = {"smoke", "regression"},
             dataProvider = "smokeCases",
-            // testName = "{3}" → TestNG dùng tham số index 3 (description) làm tên test
-            // Kết quả: "TC_SMOKE_01: Đăng nhập standard_user thành công" thay vì "[0]"
-            description = "Smoke: Đăng nhập thành công từ Excel"
+            description = "Smoke: Dang nhap thanh cong tu Excel"
     )
     public void testLoginSmoke(String username, String password,
                                String expectedUrl, String description) {
-        System.out.println("\n[SMOKE] Đang chạy: " + description);
-        System.out.println("  → username: " + username);
+        System.out.println("\n[SMOKE] Dang chay: " + description);
+        System.out.println("  -> username: " + username);
 
         LoginPage loginPage = new LoginPage(getDriver());
         InventoryPage inventoryPage = loginPage.login(username, password);
 
         Assert.assertTrue(inventoryPage.isLoaded(),
                 "[SMOKE FAIL] " + description
-                        + " | Trang inventory không hiển thị");
+                        + " | Trang inventory khong hien thi");
 
         Assert.assertTrue(
                 getDriver().getCurrentUrl().contains(expectedUrl),
                 "[SMOKE FAIL] " + description
-                        + " | URL không chứa '" + expectedUrl + "'"
+                        + " | URL khong chua '" + expectedUrl + "'"
                         + " | Actual URL: " + getDriver().getCurrentUrl()
         );
     }
 
-
     @Test(
-            groups       = {"negative", "regression"},
+            groups = {"negative", "regression"},
             dataProvider = "negativeCases",
-            description  = "Negative: Đăng nhập thất bại từ Excel"
+            description = "Negative: Dang nhap that bai tu Excel"
     )
     public void testLoginNegative(String username, String password,
                                   String expectedError, String description) {
-        System.out.println("\n[NEGATIVE] Đang chạy: " + description);
+        System.out.println("\n[NEGATIVE] Dang chay: " + description);
 
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.loginExpectingFailure(username, password);
 
-        // Kiểm tra error message phải hiển thị
         Assert.assertTrue(loginPage.isErrorDisplayed(),
                 "[NEGATIVE FAIL] " + description
-                        + " | Error message không hiển thị");
+                        + " | Error message khong hien thi");
 
-        // Kiểm tra nội dung lỗi đúng
         String actualError = loginPage.getErrorMessage();
         Assert.assertTrue(
                 actualError.contains(expectedError),
                 "[NEGATIVE FAIL] " + description
-                        + "\n  Expected chứa : '" + expectedError + "'"
+                        + "\n  Expected chua : '" + expectedError + "'"
                         + "\n  Actual        : '" + actualError + "'"
         );
     }
 
-
     @Test(
-            groups       = {"boundary", "regression"},
+            groups = {"boundary", "regression"},
             dataProvider = "boundaryCases",
-            description  = "Boundary: Dữ liệu biên từ Excel"
+            description = "Boundary: Du lieu bien tu Excel"
     )
     public void testLoginBoundary(String username, String password,
                                   String expectedError, String description) {
-        System.out.println("\n[BOUNDARY] Đang chạy: " + description);
+        System.out.println("\n[BOUNDARY] Dang chay: " + description);
 
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage.loginExpectingFailure(username, password);
 
-
+        String currentUrl = getDriver().getCurrentUrl();
         boolean stayedOnLogin = loginPage.isErrorDisplayed()
-                || getDriver().getCurrentUrl().contains("saucedemo.com")
-                && !getDriver().getCurrentUrl().contains("inventory");
+                || currentUrl.contains(getConfig().getBaseHost())
+                && !currentUrl.contains("inventory");
 
         Assert.assertTrue(stayedOnLogin,
                 "[BOUNDARY FAIL] " + description
-                        + " | Trang đã bị redirect — boundary input không được xử lý đúng");
+                        + " | Trang da bi redirect - boundary input khong duoc xu ly dung");
 
-        // Nếu có error message thì kiểm tra nội dung
         if (loginPage.isErrorDisplayed()) {
             String actualError = loginPage.getErrorMessage();
             Assert.assertTrue(
                     actualError.contains(expectedError),
                     "[BOUNDARY FAIL] " + description
-                            + "\n  Expected chứa : '" + expectedError + "'"
+                            + "\n  Expected chua : '" + expectedError + "'"
                             + "\n  Actual        : '" + actualError + "'"
             );
         }

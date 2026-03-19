@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="27" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-19T12:14:21 ICT" name="Bai3_WhiteBox_Suite" finished-at="2026-03-19T12:14:21 ICT" duration-ms="89">
+    <groups>
+    </groups>
+    <test started-at="2026-03-19T12:14:21 ICT" name="Bai3.1 - XepLoai Coverage Tests" finished-at="2026-03-19T12:14:21 ICT" duration-ms="47">
+      <class name="com.example.bai3_whitebox.XepLoaiCoverageTest">
+        <test-method signature="testBoundary_DiemMuoi()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBoundary_DiemMuoi" description="Boundary: diem=10 (bien tren hop le) -&gt; &#039;Gioi&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_DiemMuoi -->
+        <test-method signature="testBoundary_DiemZero()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBoundary_DiemZero" description="Boundary: diem=0 (bien duoi hop le) -&gt; khong phai Gioi/Kha/TrungBinh" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_DiemZero -->
+        <test-method signature="testBoundary_VuaKhongDatGioi()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBoundary_VuaKhongDatGioi" description="Boundary: diem=8.49 (ngay duoi nguong Gioi) -&gt; &#039;Kha&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_VuaKhongDatGioi -->
+        <test-method signature="testBranch_N1_True_DiemAm()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBranch_N1_True_DiemAm" description="TC-B1 [Branch N1-True]: diem=-1 -&gt; N1 du dung, thoat ngay | &#039;Diem khong hop le&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBranch_N1_True_DiemAm -->
+        <test-method signature="testBranch_N2_True_Gioi_BienDuoi()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBranch_N2_True_Gioi_BienDuoi" description="TC-B2 [Branch N1-False, N2-True]: diem=8.5 -&gt; bien duoi cua &#039;Gioi&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBranch_N2_True_Gioi_BienDuoi -->
+        <test-method signature="testBranch_N3_True_Kha_BienDuoi()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBranch_N3_True_Kha_BienDuoi" description="TC-B3 [Branch N2-False, N3-True]: diem=7.0 -&gt; bien duoi cua &#039;Kha&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBranch_N3_True_Kha_BienDuoi -->
+        <test-method signature="testBranch_N4_True_TrungBinh_BienDuoi()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBranch_N4_True_TrungBinh_BienDuoi" description="TC-B4 [Branch N3-False, N4-True]: diem=5.5 -&gt; bien duoi cua &#039;Trung Binh&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBranch_N4_True_TrungBinh_BienDuoi -->
+        <test-method signature="testBranch_N5_False_YeuHocLai()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBranch_N5_False_YeuHocLai" description="TC-B6 [Branch N5-False]: diem=4.0, coThiLai=false -&gt; &#039;Yeu - Hoc lai&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBranch_N5_False_YeuHocLai -->
+        <test-method signature="testBranch_N5_True_ThiLai()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testBranch_N5_True_ThiLai" description="TC-B5 [Branch N4-False, N5-True]: diem=4.0, coThiLai=true -&gt; &#039;Thi lai&#039;" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBranch_N5_True_ThiLai -->
+        <test-method signature="testStatement_DiemAm()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testStatement_DiemAm" description="TC-S1 [Statement]: diemTB=-1 (am) -&gt; &#039;Diem khong hop le&#039; | Phu: N1-True" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatement_DiemAm -->
+        <test-method signature="testStatement_DiemLonHon10()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testStatement_DiemLonHon10" description="TC-S2 [Statement]: diemTB=11 (lon hon 10) -&gt; &#039;Diem khong hop le&#039; | Phu: N1-True (bien)" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatement_DiemLonHon10 -->
+        <test-method signature="testStatement_Gioi()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testStatement_Gioi" description="TC-S3 [Statement]: diemTB=9.0 -&gt; &#039;Gioi&#039; | Phu: N1-False, N2-True" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatement_Gioi -->
+        <test-method signature="testStatement_Kha()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testStatement_Kha" description="TC-S4 [Statement]: diemTB=7.5 -&gt; &#039;Kha&#039; | Phu: N1-False, N2-False, N3-True" finished-at="2026-03-19T12:14:21 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatement_Kha -->
+        <test-method signature="testStatement_ThiLai()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testStatement_ThiLai" description="TC-S6 [Statement]: diemTB=4.0, coThiLai=true -&gt; &#039;Thi lai&#039; | Phu: N5-True" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatement_ThiLai -->
+        <test-method signature="testStatement_TrungBinh()[pri:0, instance:com.example.bai3_whitebox.XepLoaiCoverageTest@62379589]" started-at="2026-03-19T12:14:21 ICT" name="testStatement_TrungBinh" description="TC-S5 [Statement]: diemTB=6.0 -&gt; &#039;Trung Binh&#039; | Phu: N1-F, N2-F, N3-F, N4-True" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatement_TrungBinh -->
+      </class> <!-- com.example.bai3_whitebox.XepLoaiCoverageTest -->
+    </test> <!-- Bai3.1 - XepLoai Coverage Tests -->
+    <test started-at="2026-03-19T12:14:21 ICT" name="Bai3.2 - TinhTienNuoc Branch Coverage Tests" finished-at="2026-03-19T12:14:21 ICT" duration-ms="13">
+      <class name="com.example.bai3_whitebox.TinhTienNuocTest">
+        <test-method signature="testBoundary_DanCu_11m3()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testBoundary_DanCu_11m3" description="Boundary: soM3=11 (vua qua nguong N4) voi dan_cu -&gt; 11*9900=108900" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_DanCu_11m3 -->
+        <test-method signature="testBoundary_DanCu_21m3()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testBoundary_DanCu_21m3" description="Boundary: soM3=21 (vua qua nguong N5) voi dan_cu -&gt; 21*11400=239400" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_DanCu_21m3 -->
+        <test-method signature="testBoundary_SoM3_Mot_HoNgheo()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testBoundary_SoM3_Mot_HoNgheo" description="Boundary: soM3=1 (bien duoi hop le) voi ho_ngheo -&gt; 1*5000=5000" finished-at="2026-03-19T12:14:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_SoM3_Mot_HoNgheo -->
+        <test-method signature="testTC1b_SoM3_Am()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC1b_SoM3_Am" description="TC1b [N1-True vien am]: soM3=-5 -&gt; tra ve 0" finished-at="2026-03-19T12:14:21 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC1b_SoM3_Am -->
+        <test-method signature="testTC1_SoM3_Khong()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC1_SoM3_Khong" description="TC1 [N1-True]: soM3=0 -&gt; tra ve 0 (khong tinh tien)" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC1_SoM3_Khong -->
+        <test-method signature="testTC2_HoNgheo()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC2_HoNgheo" description="TC2 [N1-F, N2-True]: loai=ho_ngheo, soM3=5 -&gt; 5*5000=25000" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC2_HoNgheo -->
+        <test-method signature="testTC3_DanCu_DuoiOrBang10()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC3_DanCu_DuoiOrBang10" description="TC3 [N1-F, N2-F, N3-True, N4-True]: loai=dan_cu, soM3=8 -&gt; 8*7500=60000" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC3_DanCu_DuoiOrBang10 -->
+        <test-method signature="testTC3b_DanCu_Bien10()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC3b_DanCu_Bien10" description="TC3b [N4-True bien]: loai=dan_cu, soM3=10 -&gt; 10*7500=75000 (bien cua N4=True)" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC3b_DanCu_Bien10 -->
+        <test-method signature="testTC4_DanCu_Muc2()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC4_DanCu_Muc2" description="TC4 [N3-T, N4-F, N5-True]: loai=dan_cu, soM3=15 -&gt; 15*9900=148500" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC4_DanCu_Muc2 -->
+        <test-method signature="testTC4b_DanCu_Bien20()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC4b_DanCu_Bien20" description="TC4b [N5-True bien]: loai=dan_cu, soM3=20 -&gt; 20*9900=198000 (bien tren N5=True)" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC4b_DanCu_Bien20 -->
+        <test-method signature="testTC5_DanCu_Muc3()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC5_DanCu_Muc3" description="TC5 [N3-T, N4-F, N5-False]: loai=dan_cu, soM3=25 -&gt; 25*11400=285000" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC5_DanCu_Muc3 -->
+        <test-method signature="testTC6_KinhDoanh()[pri:0, instance:com.example.bai3_whitebox.TinhTienNuocTest@8297b3a]" started-at="2026-03-19T12:14:21 ICT" name="testTC6_KinhDoanh" description="TC6 [N2-F, N3-False]: loai=kinh_doanh, soM3=10 -&gt; 10*22000=220000" finished-at="2026-03-19T12:14:21 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTC6_KinhDoanh -->
+      </class> <!-- com.example.bai3_whitebox.TinhTienNuocTest -->
+    </test> <!-- Bai3.2 - TinhTienNuoc Branch Coverage Tests -->
+  </suite> <!-- Bai3_WhiteBox_Suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Bai6_WhiteBox_Selenium,com.example.bai6_whitebox_selenium,TextBoxPage,150,0,12,0,37,0,15,0,9,0
+Bai6_WhiteBox_Selenium,com.example.bai6_whitebox_selenium,Bai6Application,8,0,0,0,3,0,2,0,2,0
+Bai6_WhiteBox_Selenium,com.example.bai6_whitebox_selenium,PhoneValidator,3,67,0,22,1,16,1,12,1,1

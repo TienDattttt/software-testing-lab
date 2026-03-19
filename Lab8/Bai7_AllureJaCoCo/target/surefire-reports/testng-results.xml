@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-19T12:48:47 ICT" name="Bai7_AllureJaCoCo_Suite" finished-at="2026-03-19T12:48:48 ICT" duration-ms="303">
+    <groups>
+    </groups>
+    <test started-at="2026-03-19T12:48:47 ICT" name="Bai7.1 - OrderProcessor: Basis Path + MC/DC Tests" finished-at="2026-03-19T12:48:48 ICT" duration-ms="303">
+      <class name="com.example.bai7_allurejacoco.OrderProcessorTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBoundary_D7_Total499999_CoShip()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testBoundary_D7_Total499999_CoShip" description="Boundary D7: total=499,999 (vua duoi nguong) -&gt; CO phi ship" finished-at="2026-03-19T12:48:47 ICT" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_D7_Total499999_CoShip -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBoundary_D7_Total500k_KhongShip()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testBoundary_D7_Total500k_KhongShip" description="Boundary D7: total=500,000 (dung nguong) -&gt; KHONG phi ship" finished-at="2026-03-19T12:48:47 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundary_D7_Total500k_KhongShip -->
+        <test-method signature="testKetHop_Sale10_Gold_KhongShip()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testKetHop_Sale10_Gold_KhongShip" description="Ket hop: SALE10 + GOLD member + COD, tong &gt;= 500k" finished-at="2026-03-19T12:48:47 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKetHop_Sale10_Gold_KhongShip -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testKetHop_Sale20_Platinum_Online()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testKetHop_Sale20_Platinum_Online" description="Ket hop: SALE20 + PLATINUM + BANKING, tong &lt; 500k" finished-at="2026-03-19T12:48:47 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKetHop_Sale20_Platinum_Online -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMCDC_M1_D2True_D3True_Sale10()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testMCDC_M1_D2True_D3True_Sale10" description="MC/DC M1 [D2=T,D3=T]: coupon=&#039;SALE10&#039;, hop le -&gt; ap dung giam gia 10%" finished-at="2026-03-19T12:48:47 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_M1_D2True_D3True_Sale10 -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMCDC_M2_D2True_D3False_Sale20()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testMCDC_M2_D2True_D3False_Sale20" description="MC/DC M2 [D2=T,D3=F,D4=T]: coupon=&#039;SALE20&#039;, D3=False -&gt; ap dung D4 (20%)" finished-at="2026-03-19T12:48:47 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_M2_D2True_D3False_Sale20 -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMCDC_M3_D2False_NoCoupon()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testMCDC_M3_D2False_NoCoupon" description="MC/DC M3 [D2=F]: coupon=null -&gt; D2=False, khong ap dung giam gia" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_M3_D2False_NoCoupon -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMCDC_M3b_D2False_EmptyCoupon()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testMCDC_M3b_D2False_EmptyCoupon" description="MC/DC M3b [D2=F bien]: coupon=&#039;&#039; (rong) -&gt; D2=False" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_M3b_D2False_EmptyCoupon -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP1_GioHangNull()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP1_GioHangNull" description="P1 [D1=True]: Gio hang null -&gt; throws IllegalArgumentException" finished-at="2026-03-19T12:48:47 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP1_GioHangNull -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP1b_GioHangRong()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP1b_GioHangRong" description="P1b [D1=True]: Gio hang rong -&gt; throws IllegalArgumentException" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP1b_GioHangRong -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP2_KhongCoupon_KhongMember_KhongShip()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP2_KhongCoupon_KhongMember_KhongShip" description="P2 [D2=F,D5=F,D6=F,D7=F]: Khong coupon, khong member, tong&gt;=500k -&gt; khong ship" finished-at="2026-03-19T12:48:47 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP2_KhongCoupon_KhongMember_KhongShip -->
+        <test-method signature="testP3_Online_PhiShip30k()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP3_Online_PhiShip30k" description="P3 [D2=F,D5=F,D6=F,D7=T,D8=T]: Tong&lt;500k, ONLINE -&gt; phi ship 30k" finished-at="2026-03-19T12:48:47 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP3_Online_PhiShip30k -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP4_COD_PhiShip20k()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP4_COD_PhiShip20k" description="P4 [D7=T,D8=F]: COD, tong&lt;500k -&gt; phi ship 20k" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP4_COD_PhiShip20k -->
+        <test-method signature="testP5_Sale10_Online()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP5_Sale10_Online" description="P5 [D2=T,D3=T,D7=T,D8=T]: SALE10 giam 10%, online -&gt; phi ship 30k" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP5_Sale10_Online -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP6_Sale20_Online()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP6_Sale20_Online" description="P6 [D2=T,D3=F,D4=T,D7=T,D8=T]: SALE20 giam 20%, online" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP6_Sale20_Online -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP7_CouponKhongHopLe()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP7_CouponKhongHopLe" description="P7 [D2=T,D3=F,D4=F]: Ma giam gia khong hop le -&gt; throws exception" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP7_CouponKhongHopLe -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP8_GoldMember_KhongShip()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="testP8_GoldMember_KhongShip" description="P8 [D5=T,D7=F]: Khach GOLD giam 5%, tong&gt;=500k -&gt; khong ship" finished-at="2026-03-19T12:48:47 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP8_GoldMember_KhongShip -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:47 ICT" name="setUp" finished-at="2026-03-19T12:48:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testP9_PlatinumMember_KhongShip()[pri:0, instance:com.example.bai7_allurejacoco.OrderProcessorTest@27b000f7]" started-at="2026-03-19T12:48:48 ICT" name="testP9_PlatinumMember_KhongShip" description="P9 [D6=T,D7=F]: Khach PLATINUM giam 10%, tong&gt;=500k -&gt; khong ship" finished-at="2026-03-19T12:48:48 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testP9_PlatinumMember_KhongShip -->
+      </class> <!-- com.example.bai7_allurejacoco.OrderProcessorTest -->
+    </test> <!-- Bai7.1 - OrderProcessor: Basis Path + MC/DC Tests -->
+  </suite> <!-- Bai7_AllureJaCoCo_Suite -->
+</testng-results>

@@ -1,62 +1,112 @@
 package com.example.seleniumframework.framework.config;
 
-
-
-import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URI;
 import java.util.Properties;
 
+public final class ConfigReader {
 
-public class ConfigReader {
-
-    private static final Properties props = new Properties();
     private static ConfigReader instance;
 
+    private final Properties props = new Properties();
+    private final String environment;
 
-    private ConfigReader() {
+    private ConfigReader(String environment) {
+        this.environment = environment;
+        String fileName = "config-" + environment + ".properties";
 
-        String env = System.getProperty("env", "dev");
-        String filePath = "src/test/resources/config-" + env + ".properties";
+        try (InputStream inputStream = ConfigReader.class
+                .getClassLoader()
+                .getResourceAsStream(fileName)) {
+            if (inputStream == null) {
+                throw new IllegalStateException(
+                        "[ConfigReader] Khong tim thay file config: " + fileName
+                );
+            }
 
-        try (FileInputStream fis = new FileInputStream(filePath)) {
-            props.load(fis);
-            System.out.println("[ConfigReader] Môi trường đang dùng: " + env);
+            props.load(inputStream);
         } catch (IOException e) {
             throw new RuntimeException(
-                    "[ConfigReader] Không tìm thấy file config: " + filePath, e
+                    "[ConfigReader] Khong doc duoc file config: " + fileName, e
             );
         }
+
+        System.out.println("[ConfigReader] \u0110ang d\u00f9ng m\u00f4i tr\u01b0\u1eddng: " + environment);
+        System.out.println("[ConfigReader] explicit.wait = " + getExplicitWait());
     }
 
-
-    public static ConfigReader getInstance() {
-        if (instance == null) {
-            instance = new ConfigReader();
+    public static synchronized ConfigReader getInstance() {
+        String activeEnvironment = resolveEnvironment();
+        if (instance == null || !instance.environment.equals(activeEnvironment)) {
+            instance = new ConfigReader(activeEnvironment);
         }
         return instance;
     }
 
+    public String getEnvironment() {
+        return environment;
+    }
+
     public String getBaseUrl() {
-        return props.getProperty("base.url");
+        return getRequiredProperty("base.url");
+    }
+
+    public String getBaseHost() {
+        return URI.create(getBaseUrl()).getHost();
     }
 
     public String getBrowser() {
-        return props.getProperty("browser", "chrome");
+        return getRequiredProperty("browser");
     }
 
     public int getExplicitWait() {
-        return Integer.parseInt(props.getProperty("explicit.wait", "15"));
+        return Integer.parseInt(getRequiredProperty("explicit.wait"));
     }
 
     public int getImplicitWait() {
-        return Integer.parseInt(props.getProperty("implicit.wait", "5"));
+        return Integer.parseInt(getRequiredProperty("implicit.wait"));
+    }
+
+    public int getShortWait() {
+        return Integer.parseInt(getRequiredProperty("short.wait"));
     }
 
     public int getRetryCount() {
-        return Integer.parseInt(props.getProperty("retry.count", "1"));
+        return Integer.parseInt(getRequiredProperty("retry.count"));
     }
 
     public String getScreenshotPath() {
-        return props.getProperty("screenshot.path", "target/screenshots/");
+        return getRequiredProperty("screenshot.path");
+    }
+
+    public String getStandardUsername() {
+        return getRequiredProperty("login.standard.username");
+    }
+
+    public String getLockedUsername() {
+        return getRequiredProperty("login.locked.username");
+    }
+
+    public String getDefaultPassword() {
+        return getRequiredProperty("login.default.password");
+    }
+
+    private String getRequiredProperty(String key) {
+        String value = props.getProperty(key);
+        if (value == null || value.isBlank()) {
+            throw new IllegalStateException(
+                    "[ConfigReader] Thieu cau hinh bat buoc: " + key
+            );
+        }
+        return value.trim();
+    }
+
+    private static String resolveEnvironment() {
+        String env = System.getProperty("env", "dev");
+        if (env == null || env.isBlank()) {
+            return "dev";
+        }
+        return env.trim().toLowerCase();
     }
 }

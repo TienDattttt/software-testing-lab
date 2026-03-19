@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="37" passed="37" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-19T12:42:23 ICT" name="UnitOnly" finished-at="2026-03-19T12:42:23 ICT" duration-ms="118">
+    <groups>
+    </groups>
+    <test started-at="2026-03-19T12:42:23 ICT" name="PhoneValidator Unit Tests" finished-at="2026-03-19T12:42:23 ICT" duration-ms="118">
+      <class name="com.example.bai6_whitebox_selenium.PhoneValidatorTest">
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rong]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[khoang trang]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bat dau bang 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[09abc12345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chua chu cai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0212345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dau so 2 (sai)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0412345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dau so 4 (sai)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[093456789]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9 chu so (thieu 1)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[09345678901]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11 chu so (du 1)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_InvalidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_InvalidPhones" description="DataProvider: Cac so khong hop le -&gt; phai tra false" data-provider="invalid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+8412345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+84 + 8 chu so (thieu 1)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_InvalidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0312345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[03x format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0512345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[05x format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0712345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[07x format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0812345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[08x format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0912345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[09x format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+84912345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+84 format]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0912 345 678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[co khoang trang]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testDataProvider_ValidPhones(java.lang.String,java.lang.String)[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testDataProvider_ValidPhones" description="DataProvider: Cac so hop le -&gt; phai tra true" data-provider="valid_phones" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+84 912 345 678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chuoi +84 co space]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider_ValidPhones -->
+        <test-method signature="testPath1_Null()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath1_Null" description="Path 1 [N1=True]: phone=null -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath1_Null -->
+        <test-method signature="testPath1b_Empty()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath1b_Empty" description="Path 1b [N1=True]: phone rong -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath1b_Empty -->
+        <test-method signature="testPath1c_BlankSpaces()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath1c_BlankSpaces" description="Path 1c [N1=True]: phone chi chua khoang trang -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath1c_BlankSpaces -->
+        <test-method signature="testPath2_InvalidCharacter_Letter()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath2_InvalidCharacter_Letter" description="Path 2 [N2=True]: chua chu cai &#039;a&#039; -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath2_InvalidCharacter_Letter -->
+        <test-method signature="testPath2b_InvalidCharacter_Special()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath2b_InvalidCharacter_Special" description="Path 2b [N2=True]: chua ky tu dac biet &#039;@&#039; -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath2b_InvalidCharacter_Special -->
+        <test-method signature="testPath3_WrongPrefix()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath3_WrongPrefix" description="Path 3 [N3=F, N4=F]: prefix la &#039;1...&#039; (khong phai 0 hay +84) -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath3_WrongPrefix -->
+        <test-method signature="testPath4_Plus84_WrongLength()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath4_Plus84_WrongLength" description="Path 4 [N3=True, N5=False]: +84 nhung chi co 8 chu so sau -&gt; false (sai do dai)" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath4_Plus84_WrongLength -->
+        <test-method signature="testPath5_ZeroPrefix_WrongLength()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath5_ZeroPrefix_WrongLength" description="Path 5 [N4=True, N5=False]: bat dau bang 0 nhung chi 9 chu so tong -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath5_ZeroPrefix_WrongLength -->
+        <test-method signature="testPath5b_TooLong()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath5b_TooLong" description="Path 5b [N5=False]: 11 chu so -&gt; false (qua do dai)" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath5b_TooLong -->
+        <test-method signature="testPath6_WrongSecondDigit_2()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath6_WrongSecondDigit_2" description="Path 6 [N6=False]: bat dau bang &#039;02&#039; (dau so sai &#039;2&#039;) -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath6_WrongSecondDigit_2 -->
+        <test-method signature="testPath7_Valid_Prefix09()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath7_Valid_Prefix09" description="Path 7 [N1..N6=True]: &#039;0912345678&#039; -&gt; hop le (dau so 9)" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath7_Valid_Prefix09 -->
+        <test-method signature="testPath6b_WrongSecondDigit_4()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testPath6b_WrongSecondDigit_4" description="Path 6b [N6=False]: bat dau bang &#039;04&#039; (dau so sai &#039;4&#039;) -&gt; false" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPath6b_WrongSecondDigit_4 -->
+        <test-method signature="testValid_Plus84Format()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testValid_Plus84Format" description="Hop le: dinh dang +84 chuan hoa -&gt; true" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValid_Plus84Format -->
+        <test-method signature="testValid_Plus84WithSpace()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testValid_Plus84WithSpace" description="Hop le: +84 voi space -&gt; true" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValid_Plus84WithSpace -->
+        <test-method signature="testValid_Prefix03()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testValid_Prefix03" description="Hop le: bat dau bang &#039;03x&#039; -&gt; true" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValid_Prefix03 -->
+        <test-method signature="testValid_Prefix05()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testValid_Prefix05" description="Hop le: bat dau bang &#039;05x&#039; -&gt; true" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValid_Prefix05 -->
+        <test-method signature="testValid_Prefix07()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testValid_Prefix07" description="Hop le: bat dau bang &#039;07x&#039; -&gt; true" finished-at="2026-03-19T12:42:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValid_Prefix07 -->
+        <test-method signature="testValid_Prefix08()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testValid_Prefix08" description="Hop le: bat dau bang &#039;08x&#039; -&gt; true" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValid_Prefix08 -->
+        <test-method signature="testValid_WithSpaces()[pri:0, instance:com.example.bai6_whitebox_selenium.PhoneValidatorTest@3f23a3a0]" started-at="2026-03-19T12:42:23 ICT" name="testValid_WithSpaces" description="Hop le: so dien thoai co dau cach (space) -&gt; true" finished-at="2026-03-19T12:42:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValid_WithSpaces -->
+      </class> <!-- com.example.bai6_whitebox_selenium.PhoneValidatorTest -->
+    </test> <!-- PhoneValidator Unit Tests -->
+  </suite> <!-- UnitOnly -->
+</testng-results>

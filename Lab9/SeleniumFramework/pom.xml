@@ -14,6 +14,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <selenium.version>4.41.0</selenium.version>
     </properties>
 
     <dependencies>
@@ -21,14 +22,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.18.1</version>
-        </dependency>
-
-        <!-- WebDriverManager -->
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.8.0</version>
+            <version>${selenium.version}</version>
         </dependency>
 
         <!-- TestNG -->
@@ -70,6 +64,11 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <java.util.logging.config.file>
+                            ${project.basedir}/src/test/resources/logging.properties
+                        </java.util.logging.config.file>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>

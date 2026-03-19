@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    Bai3_WhiteBox - TestNG Suite
+    ============================================================
+    Gom 2 test class tuong ung 2 bai tap:
+    - Bai tap 3.1: XepLoaiCoverageTest
+        (CFG, Statement Coverage, Branch Coverage cho ham xepLoai)
+    - Bai tap 3.2: TinhTienNuocTest
+        (Branch Coverage thuc te cho ham tinhTienNuoc)
+    ============================================================
+-->
+<suite name="Bai3_WhiteBox_Suite" verbose="2">
+
+    <!-- Bai tap 3.1: Phan tich CFG va tinh toan Coverage (ham xepLoai) -->
+    <test name="Bai3.1 - XepLoai Coverage Tests">
+        <classes>
+            <class name="com.example.bai3_whitebox.XepLoaiCoverageTest"/>
+        </classes>
+    </test>
+
+    <!-- Bai tap 3.2: Statement va Branch Coverage Thuc Te (ham tinhTienNuoc) -->
+    <test name="Bai3.2 - TinhTienNuoc Branch Coverage Tests">
+        <classes>
+            <class name="com.example.bai3_whitebox.TinhTienNuocTest"/>
+        </classes>
+    </test>
+
+</suite>
