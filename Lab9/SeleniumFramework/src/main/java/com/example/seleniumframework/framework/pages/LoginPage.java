@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class LoginPage extends BasePage {
@@ -22,13 +23,27 @@ public class LoginPage extends BasePage {
     @FindBy(css = "[data-test='error']")
     private WebElement errorMessageElement;
 
+    @FindBy(className = "login_logo")
+    private WebElement loginLogo;
+
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-
-
+    public boolean isLoaded() {
+        try {
+            waitForPageLoad();
+            wait.until(ExpectedConditions.visibilityOfAllElements(
+                    usernameField,
+                    passwordField,
+                    loginButton
+            ));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
     public InventoryPage login(String username, String password) {
         waitAndType(usernameField, username);
@@ -53,5 +68,21 @@ public class LoginPage extends BasePage {
 
     public boolean isErrorDisplayed() {
         return isElementVisible(By.cssSelector("[data-test='error']"));
+    }
+
+    public boolean isLoginFormVisible() {
+        return isLoaded();
+    }
+
+    public String getUsernamePlaceholder() {
+        return getAttribute(usernameField, "placeholder");
+    }
+
+    public String getPasswordPlaceholder() {
+        return getAttribute(passwordField, "placeholder");
+    }
+
+    public String getLogoText() {
+        return getText(loginLogo);
     }
 }

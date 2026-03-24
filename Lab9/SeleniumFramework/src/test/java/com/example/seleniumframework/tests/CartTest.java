@@ -18,6 +18,24 @@ public class CartTest extends BaseTest {
                 .login(config.getStandardUsername(), config.getDefaultPassword());
     }
 
+    @Test(description = "TC_LEGACY_CART_01 - Inventory page hien thi danh sach san pham")
+    public void testInventoryPageLoaded() {
+        InventoryPage inventoryPage = loginAsStandardUser();
+
+        Assert.assertTrue(inventoryPage.isLoaded(),
+                "TC_LEGACY_CART_01 FAIL: Trang inventory chua load");
+        Assert.assertTrue(inventoryPage.getInventoryItemCount() > 0,
+                "TC_LEGACY_CART_01 FAIL: Khong co san pham nao hien thi");
+    }
+
+    @Test(description = "TC_LEGACY_CART_02 - Gio hang trong ban dau")
+    public void testCartEmptyInitially() {
+        InventoryPage inventoryPage = loginAsStandardUser();
+
+        Assert.assertTrue(inventoryPage.isCartEmpty(),
+                "TC_LEGACY_CART_02 FAIL: Gio hang ban dau phai trong");
+    }
+
     @Test(description = "TC05 - Them san pham vao gio")
     public void testAddItemToCart() {
         InventoryPage inventoryPage = loginAsStandardUser()

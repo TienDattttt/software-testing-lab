@@ -11,10 +11,8 @@ import java.util.List;
 
 public class InventoryPage extends BasePage {
 
-    private static final By INVENTORY_ITEMS = By.cssSelector(".inventory_item");
     private static final By INVENTORY_ITEM_NAME = By.cssSelector(".inventory_item_name");
     private static final By ITEM_BUTTON = By.cssSelector("button");
-    private static final By CART_LINK = By.className("shopping_cart_link");
 
     @FindBy(css = ".inventory_list")
     private WebElement inventoryList;
@@ -22,8 +20,14 @@ public class InventoryPage extends BasePage {
     @FindBy(css = ".shopping_cart_badge")
     private WebElement cartBadge;
 
+    @FindBy(css = ".inventory_item")
+    private List<WebElement> inventoryItems;
+
     @FindBy(css = ".inventory_item button")
     private List<WebElement> addToCartButtons;
+
+    @FindBy(className = "shopping_cart_link")
+    private WebElement cartLink;
 
     public InventoryPage(WebDriver driver) {
         super(driver);
@@ -42,8 +46,7 @@ public class InventoryPage extends BasePage {
     public InventoryPage addItemByName(String productName) {
         wait.until(ExpectedConditions.visibilityOf(inventoryList));
 
-        List<WebElement> items = driver.findElements(INVENTORY_ITEMS);
-        for (WebElement item : items) {
+        for (WebElement item : inventoryItems) {
             String name = item.findElement(INVENTORY_ITEM_NAME).getText().trim();
             if (name.equals(productName)) {
                 WebElement button = item.findElement(ITEM_BUTTON);
@@ -63,8 +66,17 @@ public class InventoryPage extends BasePage {
         }
     }
 
+    public int getInventoryItemCount() {
+        wait.until(ExpectedConditions.visibilityOf(inventoryList));
+        return inventoryItems.size();
+    }
+
+    public boolean isCartEmpty() {
+        return getCartItemCount() == 0;
+    }
+
     public CartPage goToCart() {
-        WebElement cartLink = wait.until(ExpectedConditions.elementToBeClickable(CART_LINK));
+        wait.until(ExpectedConditions.elementToBeClickable(cartLink));
         waitAndClick(cartLink);
         wait.until(ExpectedConditions.urlContains("cart"));
         return new CartPage(driver);

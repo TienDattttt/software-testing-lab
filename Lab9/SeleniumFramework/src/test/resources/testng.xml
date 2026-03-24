@@ -35,6 +35,7 @@
 
     <test name="Login Tests">
         <classes>
+            <class name="com.example.seleniumframework.tests.LandingPageTest"/>
             <class name="com.example.seleniumframework.tests.LoginTest"/>
         </classes>
     </test>
@@ -55,6 +56,7 @@
 
     <test name="Faker Checkout Tests">
         <classes>
+            <class name="com.example.seleniumframework.tests.CheckoutTest"/>
             <class name="com.example.seleniumframework.tests.FakerCheckoutTest"/>
         </classes>
     </test>

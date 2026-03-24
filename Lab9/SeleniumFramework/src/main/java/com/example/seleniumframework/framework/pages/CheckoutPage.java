@@ -25,6 +25,9 @@ public class CheckoutPage extends BasePage {
     @FindBy(id = "continue")
     private WebElement continueButton;
 
+    @FindBy(css = "[data-test='error']")
+    private WebElement errorMessageElement;
+
     public CheckoutPage(WebDriver driver) {
         super(driver);
     }
@@ -73,14 +76,28 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
+    public CheckoutPage continueWithoutInfo() {
+        waitAndClick(continueButton);
+        wait.until(ExpectedConditions.visibilityOf(errorMessageElement));
+        return this;
+    }
+
+    public boolean isErrorDisplayed() {
+        return isElementVisible(ERROR_MESSAGE);
+    }
+
+    public String getErrorMessage() {
+        return getText(errorMessageElement);
+    }
+
     public boolean isOnOverviewPage() {
         try {
             wait.until(ExpectedConditions.urlContains("checkout-step-two"));
             return true;
         } catch (Exception e) {
             String errorText = "";
-            if (isElementVisible(ERROR_MESSAGE)) {
-                errorText = getText(driver.findElement(ERROR_MESSAGE));
+            if (isErrorDisplayed()) {
+                errorText = getErrorMessage();
             }
 
             System.out.println("[CheckoutPage] isOnOverviewPage=false | URL: "
