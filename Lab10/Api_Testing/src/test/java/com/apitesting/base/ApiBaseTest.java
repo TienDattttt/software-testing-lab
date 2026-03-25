@@ -22,7 +22,7 @@ public class ApiBaseTest {
     @BeforeClass(alwaysRun = true)
     public void setupApiSpec() {
         requestSpec = new RequestSpecBuilder()
-                .setBaseUri("https://reqres.in")
+                .setBaseUri(ReqresSupport.resolveBaseUri())
                 .setBasePath("/api")
                 .setContentType(ContentType.JSON)
                 .addHeader("Accept", "application/json")

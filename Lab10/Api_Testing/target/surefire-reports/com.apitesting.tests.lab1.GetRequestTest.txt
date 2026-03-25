@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.apitesting.tests.lab1.GetRequestTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.944 s -- in com.apitesting.tests.lab1.GetRequestTest

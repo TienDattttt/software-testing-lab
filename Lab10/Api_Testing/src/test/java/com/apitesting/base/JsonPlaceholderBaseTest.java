@@ -20,7 +20,7 @@ public class JsonPlaceholderBaseTest {
     @BeforeClass(alwaysRun = true)
     public void setupApiSpec() {
         requestSpec = new RequestSpecBuilder()
-                .setBaseUri("https://jsonplaceholder.typicode.com")
+                .setBaseUri(JsonPlaceholderSupport.resolveBaseUri())
                 .setBasePath("/")
                 .setContentType(ContentType.JSON)
                 .addHeader("Accept", "application/json")

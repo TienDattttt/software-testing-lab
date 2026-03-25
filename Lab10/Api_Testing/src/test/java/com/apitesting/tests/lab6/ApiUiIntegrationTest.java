@@ -1,6 +1,7 @@
 package com.apitesting.tests.lab6;
 
 import com.apitesting.base.BaseTest;
+import com.apitesting.base.ReqresSupport;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
@@ -33,7 +34,7 @@ public class ApiUiIntegrationTest extends BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void checkApiPrecondition() {
         requestSpec = new RequestSpecBuilder()
-                .setBaseUri("https://reqres.in")
+                .setBaseUri(ReqresSupport.resolveBaseUri())
                 .setBasePath("/api")
                 .setContentType(ContentType.JSON)
                 .addHeader("Accept", "application/json")
