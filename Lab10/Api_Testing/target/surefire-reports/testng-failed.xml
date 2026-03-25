@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Lab10 - API Testing Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Lab1 - GET Basic Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.apitesting.tests.lab1.GetRequestTest">
+        <methods>
+          <include name="testGetNonExistentUser"/>
+          <include name="testGetSingleUser"/>
+          <include name="testGetUsersPage2"/>
+          <include name="testGetUsersPage1"/>
+          <include name="setupApiSpec"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab1.GetRequestTest -->
+    </classes>
+  </test> <!-- Lab1 - GET Basic Tests(failed) -->
+  <test thread-count="5" name="Lab2 - CRUD Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.apitesting.tests.lab2.CrudUserTest">
+        <methods>
+          <include name="testUpdateUser"/>
+          <include name="testDeleteUser"/>
+          <include name="testPatchUser"/>
+          <include name="testCreateThenGetUser"/>
+          <include name="setupApiSpec"/>
+          <include name="testCreateUser"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab2.CrudUserTest -->
+    </classes>
+  </test> <!-- Lab2 - CRUD Tests(failed) -->
+  <test thread-count="5" name="Lab3 - JSON Schema Validation(failed)" verbose="0">
+    <classes>
+      <class name="com.apitesting.tests.lab3.JsonSchemaValidationTest">
+        <methods>
+          <include name="testSingleUserSchema"/>
+          <include name="testCreateUserSchema"/>
+          <include name="testUserListSchema"/>
+          <include name="setupApiSpec"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab3.JsonSchemaValidationTest -->
+    </classes>
+  </test> <!-- Lab3 - JSON Schema Validation(failed) -->
+  <test thread-count="5" name="Lab4 - Authorization Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.apitesting.tests.lab4.AuthorizationTest">
+        <methods>
+          <include name="testRegisterMissingPassword"/>
+          <include name="testLoginScenarios" invocation-numbers="0 1 2 3 4"/>
+          <include name="testLoginSuccess"/>
+          <include name="testLoginMissingPassword"/>
+          <include name="testRegisterSuccess"/>
+          <include name="setupApiSpec"/>
+          <include name="testLoginMissingEmail"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab4.AuthorizationTest -->
+    </classes>
+  </test> <!-- Lab4 - Authorization Tests(failed) -->
+  <test thread-count="5" name="Lab5 - Performance SLA Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.apitesting.tests.lab5.PerformanceSlaTest">
+        <methods>
+          <include name="testStressResponseTime"/>
+          <include name="setupApiSpec"/>
+          <include name="testSlaForEndpoints" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab5.PerformanceSlaTest -->
+    </classes>
+  </test> <!-- Lab5 - Performance SLA Tests(failed) -->
+  <test thread-count="5" name="Lab6 - API + UI Integration(failed)" verbose="0">
+    <classes>
+      <class name="com.apitesting.tests.lab6.ApiUiIntegrationTest">
+        <methods>
+          <include name="testFullApiUiFlow"/>
+          <include name="setupDriver"/>
+          <include name="testUiLoginAfterApiPrecondition"/>
+          <include name="checkApiPrecondition"/>
+          <include name="tearDownDriver"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab6.ApiUiIntegrationTest -->
+    </classes>
+  </test> <!-- Lab6 - API + UI Integration(failed) -->
+  <test thread-count="5" name="Lab7 - JSONPlaceholder API(failed)" verbose="0">
+    <classes>
+      <class name="com.apitesting.tests.lab7.PostApiTest">
+        <methods>
+          <include name="setupApiSpec"/>
+          <include name="testUpdatePost"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab7.PostApiTest -->
+      <class name="com.apitesting.tests.lab7.CommentApiTest">
+        <methods>
+          <include name="testGetCommentsForPost1"/>
+          <include name="setupApiSpec"/>
+        </methods>
+      </class> <!-- com.apitesting.tests.lab7.CommentApiTest -->
+    </classes>
+  </test> <!-- Lab7 - JSONPlaceholder API(failed) -->
+</suite> <!-- Failed suite [Lab10 - API Testing Suite] -->
